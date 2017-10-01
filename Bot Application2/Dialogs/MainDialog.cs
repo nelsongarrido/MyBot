@@ -15,12 +15,12 @@ namespace BotApplication2
     //    [LuisModel("73198ae7-86b7-4f44-beb6-73e64a2208c2", "d8a285498d484265a88a1f30686a2670", domain: "westus.api.cognitive.microsoft.com", apiVersion: LuisApiVersion.V2)]
     [LuisModel("73198ae7-86b7-4f44-beb6-73e64a2208c2", "d8a285498d484265a88a1f30686a2670")]
     [Serializable]
-    public class RofexDialog : LuisDialog<object>
+    public class MainDialog : LuisDialog<object>
     {
         int _saludos = 1;
 
-        public RofexDialog() { }
-        public RofexDialog(ILuisService service) : base(service) { }
+        public MainDialog() { }
+        public MainDialog(ILuisService service) : base(service) { }
 
         [LuisIntent("Greet")]
         public async Task Greet(IDialogContext context, LuisResult result)

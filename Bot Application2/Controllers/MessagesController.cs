@@ -26,7 +26,7 @@ namespace Bot_Application2.Controllers
             {
                 if (activity?.Type == ActivityTypes.Message)
                 {
-                    await Conversation.SendAsync(activity, () => new RofexDialog());
+                    await Conversation.SendAsync(activity, () => new MainDialog());
                     //QnaMakerRespose(activity);
                     // await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
                 }
