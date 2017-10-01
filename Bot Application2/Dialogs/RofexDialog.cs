@@ -18,7 +18,6 @@ namespace BotApplication2
     public class RofexDialog : LuisDialog<object>
     {
         int _saludos = 1;
-        int fff = 12;
 
         public RofexDialog() { }
         public RofexDialog(ILuisService service) : base(service) { }
